@@ -1,6 +1,8 @@
 <!-- last_verified: 2026-05-26 -->
 # Video to Insights Pipeline
 
+> Repo: **[backblaze-labs/video-to-insights-nvidia-parakeet-llama](https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama)**
+
 Paste a YouTube URL. The backend downloads the source video with `yt-dlp`,
 uploads it to **[Backblaze B2](https://www.backblaze.com/sign-up/ai-cloud-storage?utm_source=github&utm_medium=referral&utm_campaign=ai_artifacts&utm_content=video-to-insights-pipeline)**,
 transcribes it with NVIDIA Parakeet (free hosted NIM), extracts a small
@@ -78,13 +80,15 @@ Prereqs:
 - (Optional) A free **[NVIDIA NIM API key](https://build.nvidia.com/)** if you want transcription and insights
 
 ```bash
-# 1) Install JS deps
+# 1) Clone and install JS deps
+git clone https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama.git
+cd video-to-insights-nvidia-parakeet-llama
 pnpm install
 
 # 2) Set up the Python backend
 cd services/api
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt   
+pip install -r requirements.txt
 cd ../..
 
 # `pyproject.toml` is the canonical dependency manifest. `requirements.txt`
@@ -188,4 +192,4 @@ the rights of creators. This is **not** a downloader product.
 
 ## License
 
-Apache-2.0 — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).

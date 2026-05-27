@@ -3,6 +3,7 @@ name = "video-to-insights-pipeline-api"
 version = "0.1.0"
 description = "FastAPI backend for the video-to-insights-pipeline B2 sample"
 requires-python = ">=3.11"
+license = { text = "MIT" }
 # Canonical dependency manifest. `requirements.txt` is maintained in parallel
 # so the README's `pip install -r requirements.txt` flow still works for
 # contributors who haven't installed the project as a package; the two lists
@@ -18,6 +19,11 @@ dependencies = [
     "yt-dlp>=2026.1.1",
     "nvidia-riva-client>=2.18.0,<3",
 ]
+
+[project.urls]
+Homepage = "https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama"
+Repository = "https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama"
+Issues = "https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama/issues"
 
 [project.optional-dependencies]
 dev = [

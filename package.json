@@ -1,6 +1,15 @@
 {
   "name": "video-to-insights-pipeline",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama.git"
+  },
+  "homepage": "https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama#readme",
+  "bugs": {
+    "url": "https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "doctor": "node scripts/doctor.mjs",
     "predev": "node scripts/doctor.mjs",

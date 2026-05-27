@@ -2,6 +2,12 @@
   "name": "@video-to-insights-pipeline/shared",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backblaze-labs/video-to-insights-nvidia-parakeet-llama.git",
+    "directory": "packages/shared"
+  },
+  "license": "MIT",
   "main": "./src/types.ts",
   "types": "./src/types.ts"
 }
